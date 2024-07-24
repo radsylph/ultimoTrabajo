@@ -1,0 +1,27 @@
+Introduccion: hola soy andrea
+
+from handlers etc: aqui definimos las funciones que vamos a importar desde el archivo handlers
+
+if __name__ == "__main__": este es la funcion principal que se va a ejecutar al momento de compilar el archivo
+y es aqui donde se van a utilizar las funciones anteriormente importadas
+
+funciones:
+
+Funcion get_lif_supp_conf
+Calcula el soporte, la confianza y el lift entre las variables "Anotadas" y "Hit".
+Soporte: Mide la frecuencia de ocurrencia de un evento. En este caso, calcula el porcentaje de jugadores que tienen anotadas o hits superiores al promedio.
+Confianza: Mide la probabilidad de que un evento ocurra dado que otro evento ha ocurrido. Aquí se calcula la probabilidad de tener un hit dado que se tienen anotadas altas.
+Lift: Mide la mejora en la probabilidad de que ocurra un evento cuando otro evento ocurre. Aquí, se evalúa cuánto más probable es tener un hit si se tienen anotadas altas en comparación con la probabilidad general de tener hits.
+
+Función get_players_by_team
+Permite al usuario ingresar el nombre de un equipo y muestra todos los jugadores de ese equipo. Primero, valida si el nombre del equipo ingresado es válido y luego filtra el DataFrame para mostrar la información de los jugadores correspondientes.
+
+Función get_best_players_by_team
+Muestra los mejores jugadores de un equipo basado en una estadística específica. El usuario elige la estadística y el número de jugadores que desea ver. La función filtra y clasifica los jugadores del equipo en base a la estadística seleccionada.
+
+Función get_best_players_by_position
+Similar a la función anterior, pero en lugar de filtrar por equipo, filtra por posición. El usuario selecciona la posición y la estadística, y la función muestra los mejores jugadores en esa posición.
+
+Función get_best_teams
+Permite al usuario obtener los mejores equipos según una estadística específica. Agrupa los datos por equipo, calcula la suma de la estadística seleccionada para cada equipo y muestra los equipos con los valores más altos.
+
